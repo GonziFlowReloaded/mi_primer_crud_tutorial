@@ -4,7 +4,7 @@ from api import tareas
 
 app = FastAPI(title="Mi primer CRUD con FastAPI")
 
-app.include_router(tareas.router, tags=["Tareas"])
+app.include_router(tareas.router)
 
 @app.get("/")
 async def main():
